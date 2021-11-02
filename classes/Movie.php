@@ -15,8 +15,6 @@ class Movie{
      * @param string $_director director of the movie
      */ 
 
-
-
     public function __construct($_title,$_duration,$_genre,$_director)
     {
         $this->title=$_title;
