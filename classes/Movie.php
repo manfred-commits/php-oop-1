@@ -68,18 +68,42 @@ class Movie{
 
     // params getting methods
 
+    /**
+    *getTitle
+    *
+    * returns the value of the title of the movie property
+    */
     public function getTitle(){
         return $this->title;
     }
+
+    /**
+    *getDuration
+    *
+    * returns the value of the duration of the movie property
+    */
     public function getDuration(){
         return $this->duration;
     }
+
+    /**
+    *getGenre
+    *
+    * returns the value of the genre of the movie property
+    */
     public function getGenre(){
         return $this->genre;
     }
+
+    /**
+    *getDirector
+    *
+    * returns the value of the director of the movie property
+    */
     public function getDirector(){
         return$this->director;
     }
+
     // /params getting methods
 
 }

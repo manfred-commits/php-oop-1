@@ -11,9 +11,27 @@ metodi d'istanza che abbiamo visto stamattina e create un file index.php in cui:
 
 require_once __DIR__. "./classes/Movie.php";
 
+$avengersInfinityWar= new Movie("Avengers: Infinity War", 160, "Action/Sci-fi", "Russo Brothers");
+
 
 $avengersEndGame= new Movie("Avengers: End Game", 182, "Action/Sci-fi", "Russo Brothers");
 
 var_dump($avengersEndGame);
+
+echo "<h2>
+            Title of the movie: {$avengersInfinityWar->getTitle()} <br>
+            Duration: {$avengersInfinityWar->getDuration()} <br>
+            Genre: {$avengersInfinityWar->getGenre()} <br>
+            Director/s: {$avengersInfinityWar->getDirector()}  
+    </h2>";
+
+echo "<h2>
+            Title of the movie: {$avengersEndGame->getTitle()} <br>
+            Duration: {$avengersEndGame->getDuration()} <br>
+            Genre: {$avengersEndGame->getGenre()} <br>
+            Director/s: {$avengersEndGame->getDirector()}  
+    </h2>";
+
+
 
 ?>
