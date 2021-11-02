@@ -11,4 +11,9 @@ metodi d'istanza che abbiamo visto stamattina e create un file index.php in cui:
 
 require_once __DIR__. "./classes/Movie.php";
 
+
+$avengersEndGame= new Movie("Avengers: End Game", 182, "Action/Sci-fi", "Russo Brothers");
+
+var_dump($avengersEndGame);
+
 ?>
