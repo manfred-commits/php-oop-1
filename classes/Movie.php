@@ -24,6 +24,64 @@ class Movie{
     }
 
 
+    // params setting methods
+
+    /**
+    *setTitle
+    *
+    * @param string $_title title of the movie to change
+    */ 
+
+    public function setTitle($_title){
+        $this->title=$_title;
+    }
+
+    /**
+    *setDuration
+    *
+    * @param int $_duration duration of the movie to change in minutes
+    */ 
+    public function setDuration($_duration){
+        $this->duration=floor($_duration /60)."h ".$_duration%60 ."m" ;
+    }
+
+    /**
+    *setGenre
+    *
+    * @param string $_genre Genre of the movie to change
+    */ 
+    public function setGenre($_genre){
+        $this->genre=$_genre;
+    }
+
+    /**
+    *setDirector
+    *
+    * @param int $_director Director of the movie to change
+    */
+    public function setDirector($_director){
+        $this->director=$_director;
+    }
+
+    // /params setting methods
+
+
+    // params getting methods
+
+    public function getTitle(){
+        return $this->title;
+    }
+    public function getDuration(){
+        return $this->duration;
+    }
+    public function getGenre(){
+        return $this->genre;
+    }
+    public function getDirector(){
+        return$this->director;
+    }
+    // /params getting methods
+
 }
 
 
